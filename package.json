@@ -1,0 +1,50 @@
+{
+  "name": "mbillard.remind-me",
+  "description": "Remind me",
+  "version": "0.0.1",
+  "author": "mbillard",
+  "repository": {
+    "type": "git",
+    "url": "TODO: Add the GitHub URL to your extension in package.json"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.8.0"
+  },
+  "ahaExtension": {
+    "contributes": {
+      "commands": {
+        "today": {
+          "title": "Today",
+          "entryPoint": "src/commands/today.js",
+          "commandType": "recordAction",
+          "recordTypes": [
+            "Epic",
+            "Feature",
+            "Requirement"
+          ]
+        },
+        "tomorrow": {
+          "title": "Tomorrow",
+          "entryPoint": "src/commands/tomorrow.js",
+          "commandType": "recordAction",
+          "recordTypes": [
+            "Epic",
+            "Feature",
+            "Requirement"
+          ]
+        },
+        "nextWeek": {
+          "title": "Next week",
+          "entryPoint": "src/commands/nextWeek.js",
+          "commandType": "recordAction",
+          "recordTypes": [
+            "Epic",
+            "Feature",
+            "Requirement"
+          ]
+        }
+      }
+    }
+  }
+}
