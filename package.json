@@ -13,6 +13,18 @@
   },
   "ahaExtension": {
     "contributes": {
+      "views": {
+        "remindMe": {
+          "title": "Remind me",
+          "host": "attribute",
+          "entryPoint": "src/views/remindMe.js",
+          "recordTypes": [
+            "Epic",
+            "Feature",
+            "Requirement"
+          ]
+        }
+      },
       "commands": {
         "today": {
           "title": "Today",
